@@ -47,9 +47,9 @@ local function generateTeapots()
         clone.Anchored = false
 
         clone.Touched:Connect(function(hit)
-            if hit.Parent:IsA("Model") then
-                if hit.Parent:FindFirstChildWhichIsA("Humanoid") then
-                    local humanoid = hit.Parent.Humanoid
+            if hit or hit.Parent then
+                local humanoid = hit.Parent:FindFirstChildWhichIsA("Humanoid")
+                if humanoid then
                     humanoid.Health = 0
                 end
             end
