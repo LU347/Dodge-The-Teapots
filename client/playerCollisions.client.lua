@@ -2,10 +2,10 @@ local teapotCollider = workspace.Obby:WaitForChild("TeapotCollider") -- location
 local spawnWall = workspace.Obby:WaitForChild("SpawnWall")
 
 local function isHumanoid(hit)
-    if hit.Parent:FindFirstChildWhichIsA("Humanoid") then
+    local humanoid = hit.Parent:FindFirstChildWhichIsA("Humanoid")
+    if humanoid then
         return true
     end
-
     return false
 end
 
