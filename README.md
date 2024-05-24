@@ -1,5 +1,5 @@
 # Dodge-The-Teapots
-A remake of Clockwork's "Classic Dodge the Teapots of Doom"
+A remake of Clockwork's "Classic Dodge the Teapots of Doom." This will be an obby in my upcoming game "Teapot Tycoon Remastered"
  
  ## How to Install
  1. Download the repository and extract the zip file
@@ -21,3 +21,6 @@ A remake of Clockwork's "Classic Dodge the Teapots of Doom"
  local SPAWN_COOLDOWN = 0.5
  local TEAPOT_SIZE = Vector3.new(12,10,18.69)
  ```
+
+### Missing Components
+I did not program the checkpoint since I will program it differently than the original game. 
